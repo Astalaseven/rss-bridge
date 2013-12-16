@@ -19,7 +19,6 @@ class DansTonChatBridge extends BridgeAbstract{
                 $item = new \Item();
                 $item->uri = $element->find('a', 0)->href;
                 $item->title = 'DansTonChat '.$element->find('a', 1)->plaintext;
-                //$item->content = $element->find('p.item-content', 0)->innertext;
                 $item->content = $element->find('a', 0)->innertext;
                 $this->items[] = $item;
         }
